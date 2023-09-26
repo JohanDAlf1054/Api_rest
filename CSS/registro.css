@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Yanone+Kaffeesatz&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 55rem;
+    background-image: url(/img/fondo6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 108%;
+    
+}
+.caja_form{
+    position: relative;
+    width: 23.75rem;
+    height: 40rem;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.caja_form::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 23.75rem;
+    height: 26.25rem;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.caja_form::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 23.75rem;
+    height: 26.25rem;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.borderlinea{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.borderlinea::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 23.75rem;
+    height: 26.25rem;
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+.borderlinea::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 23.75rem;
+    height: 26.25rem;
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.caja_form form{
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 3.125rem 2.5rem;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.caja_form form h2{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.caja_form form .cajaInfo{
+    position: relative;
+    width: 18.75rem;
+    margin-top: 2.188rem;
+}
+.caja_form form .cajaInfo input{
+    position: relative;
+    width: 100%;
+    padding: 1.25rem 0.625rem 0.625rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color:  #23242a;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.caja_form form .cajaInfo span{
+    position: absolute;
+    left: 0;
+    padding: 1.25rem 0 0.625;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.caja_form form .cajaInfo input:valid ~ span,
+.caja_form form .cajaInfo input:focus ~ span{
+    color: #fff;
+    font-size: o.75rem;
+    transform: translateY(-34px);
+}
+.caja_form form .cajaInfo i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow:  hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.caja_form form .cajaInfo input:valid ~ i,
+.caja_form form .cajaInfo input:focus ~ i{
+    height: 44px;
+}
+.caja_form form .link{
+    display: flex;
+    justify-content: space-between;
+}
+.caja_form form .link a{
+    margin: 0.625rem 0;
+    font-size: 0.75rem;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+.caja_form form .link a:hover,
+.caja_form form .link a:nth-child(2)
+{
+    color:  #fff;
+}
+.caja_form form  input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 0.563rem 1.563rem;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 6.25rem;
+    margin-top: 0.625rem;
+}
+.caja_form form  input[type="submit"]:active{
+    opacity: 0.8;
+}
