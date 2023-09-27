@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 55rem;
-    background-image: url(/img/fondo4.jpg);
+    background-image: url(../img/fondo4.jpg);
     background-repeat: no-repeat;
     background-size: 100% 108%;
     

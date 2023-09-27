@@ -13,8 +13,7 @@ if($_SERVER ['REQUEST_METHOD'] == 'POST'){
     $_SESSION['inicio_session'] = true;
 
     if(mysqli_num_rows($validacion)>0){
-        header("location: Ingreso_pagina.php");
-        
+    header("location: inicio_pagina.html");
     }else{
     $mensaje= 'Credenciales incorrectas';
     }

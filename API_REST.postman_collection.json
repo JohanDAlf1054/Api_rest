@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "bd4124aa-1a48-4fb9-8358-0a77302cf2c2",
+		"name": "API_REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30098986"
+	},
+	"item": [
+		{
+			"name": "http://localhost:1000/servicios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Primer post\",\r\n    \"description\":\"Realizacion del post\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1000/servicios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"servicios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1000/servicios/65145a17d3f28b84918a2235",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1000/servicios/65145a17d3f28b84918a2235",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"servicios",
+						"65145a17d3f28b84918a2235"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1000/servicios/65145a17d3f28b84918a2235",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"PATCH postman post\",\r\n    \"description\":\"Realizacion del post\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1000/servicios/65145a17d3f28b84918a2235",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"servicios",
+						"65145a17d3f28b84918a2235"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:1000/servicios/6512e495c88158fd5ac44060",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1000/servicios/6512e495c88158fd5ac44060",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1000",
+					"path": [
+						"servicios",
+						"6512e495c88158fd5ac44060"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
